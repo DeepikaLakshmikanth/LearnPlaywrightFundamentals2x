@@ -1,11 +1,13 @@
 # Learn Playwright Fundamentals 2x
 
-This repository contains a basic Playwright test project built with Playwright Test.
+This repository contains a Playwright Test project with beginner-friendly examples and first test cases.
 
 ## Project structure
 
-- [tests](tests) — example Playwright test specs
-- [playwright.config.ts](playwright.config.ts) — Playwright configuration
+- [tests](tests) — test specifications organized by topic
+  - [tests/01_Basics](tests/01_Basics) — basic Playwright examples
+  - [tests/02_First_tests](tests/02_First_tests) — initial automated test scenarios
+- [playwright.config.ts](playwright.config.ts) — Playwright configuration and test settings
 - [package.json](package.json) — project dependencies and scripts
 
 ## Getting started
@@ -14,7 +16,7 @@ This repository contains a basic Playwright test project built with Playwright T
    ```bash
    npm install
    ```
-2. Run the tests:
+2. Run all tests:
    ```bash
    npx playwright test
    ```
@@ -22,8 +24,16 @@ This repository contains a basic Playwright test project built with Playwright T
    ```bash
    npx playwright test --headed
    ```
+4. Run a specific test file:
+   ```bash
+   npx playwright test tests/02_First_tests/237_BCP_Testcase_Option.spec.ts
+   ```
+
+## Output folders
+
+- [test-results](test-results) — test execution artifacts
+- [playwright-report](playwright-report) — HTML report output
 
 ## Notes
 
-- Test results are written to the [test-results](test-results) folder.
-- HTML reports are generated in the [playwright-report](playwright-report) folder.
+This project is intended for learning and practicing Playwright fundamentals, including navigation, assertions, and basic test structure.
