@@ -28,3 +28,7 @@ test('mobile context ', async ({ browser }) => {
     await page.goto('https://app.vwo.com/#login');
     await context.close();
 });
+
+// const context = await chromium.launchPersistentContext('./user_data_directory', {
+//   headless: false, // Optional configurations
+// });
