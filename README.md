@@ -7,8 +7,17 @@ This repository contains a Playwright Test project with beginner-friendly exampl
 - [tests](tests) — test specifications organized by topic
   - [tests/01_Basics](tests/01_Basics) — basic Playwright examples
   - [tests/02_First_tests](tests/02_First_tests) — initial automated test scenarios
+  - [tests/20_Page_Object_Model](tests/20_Page_Object_Model) — Page Object Model examples and reusable locator/page abstractions
 - [playwright.config.ts](playwright.config.ts) — Playwright configuration and test settings
 - [package.json](package.json) — project dependencies and scripts
+
+## POM examples
+
+The POM section demonstrates a reusable page-object style for locating elements and encapsulating browser flows. Example files are available under [tests/20_Page_Object_Model](tests/20_Page_Object_Model). A representative command to run the POM-related suite is:
+
+```bash
+npx playwright test tests/20_Page_Object_Model/305_No_POM.spec.ts
+```
 
 ## Getting started
 
